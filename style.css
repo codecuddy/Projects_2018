@@ -1,3 +1,7 @@
+body {
+    background-color: black;
+}
+
 .container {
     display: flex;
 }
@@ -5,4 +9,16 @@
 
 .footer {
     text-align: center;
+}
+
+h3, h5 {
+    color: yellow;
+}
+
+.month, h4  {
+    color: goldenrod;
+}
+
+li, footer {
+    color: darkgray;
 }
