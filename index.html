@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- Link to CSS -->
     <link href="style.css" rel="stylesheet">
     
     <!-- Display for Mobile Only -->
@@ -17,16 +19,78 @@
         and (min-device-width : 320px)
         and (max-device-width : 480px){ .mobileShow { display: inline; }} 
     </style>
-    <script>
     
-    </script>
+    <!-- Javscript for Scrolling -->
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script>
+          $(function() {
+            $('a[href*="#"]:not([href="#"])').click(function() {
+              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                  $('html, body').animate({
+                    scrollTop: target.offset().top
+                  }, 1000);
+                  return false;
+                }
+              }
+            });
+          });
+     </script>
+    
 </head>
+
     
-    <!-- ------------------------------------------------------------------------ -->
     
 <body>
+    
+<!-- --------------##################--------------
+     --------------#### NAV BAR #####--------------
+     --------------##################--------------  -->
+     
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+data-target="#navbar-collapse">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#home"><p>Cuddy</p>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#nav-udemy">Udemy Courses</a></li>
+                    <li><a href="#nav-fcc">FCC</a></li>
+                    <li><a href="#nav-side-projects">Side Projects</a></li>
+                    <li><a href="#nav-resources">Resources</a></li>
+                    <!-- <li class="dropdown">
+                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+                                aria-haspopup="true" aria-expanded="false">Additional Info 
+                                <span class="caret"></span></a> -->
+                    <li><a href="#nav-app-ideas">App Ideas</a></li>
+                    <li><a href="#nav-books">Books</a></li>
+                    <li><a href="#nav-articles">Articles</a></li> 
+                    <li><a href="#nav-blog">Blog</a></li>
+                    <li><a href="#nav-internships">Internships</a></li>
+                    <li><a href="#nav-daily-review">Daily Review</a></li>
+                    <li><a href="#nav-tangibles">Tangibles</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="home" class="jumbotron">
+        <!---------------------------######################----------------------------- 
+        -------------------------#### TOP PRIORITY ####----------------------------- 
+        -------------------------######################----------------------------- -->       
     <section class="container">
-        <div class"row">
+        <div class="row">
             <h3 class="header-button btn btn-lg" data-toggle="collapse" data-target="#priority">Top Priority</h3>
             <div id="priority" class="collapse in">
                 <ul>
@@ -36,9 +100,11 @@
             </div>
         </div>
     </section>
-    <hr>
-    <!-- ------------------------------------------------------------------------ -->
     
+    <!---------------------------#######################----------------------------- 
+        -------------------------#### UDEMY COURSES ####----------------------------- 
+        -------------------------#######################----------------------------- -->    
+    <hr id="nav-udemy" >
     <section class="container">
         <div>
         <h3 class="header-button btn btn-lg" data-toggle="collapse" data-target="#udemy-courses">Udemy Courses</h3>
@@ -66,9 +132,12 @@
             </div>
         </div>
     </section>
-    <hr>
-    <!-- ------------------------------------------------------------------------ -->
+
     
+    <!---------------------------########################----------------------------- 
+        -------------------------#### FREE CODE CAMP ####----------------------------- 
+        -------------------------########################----------------------------- -->    
+    <hr id="nav-fcc">
     <section class="container">
         <div>
             <h3 class="header-button btn btn-lg" data-toggle="collapse" data-target="#fcc">Free Code Camp</h3>
@@ -81,9 +150,12 @@
             </div>
         </div>
     </section>
-    <hr>
-    <!-- ------------------------------------------------------------------------ -->
+
     
+    <!-----------------------------#######################----------------------------- 
+        ---------------------------#### SIDE PROJECTS ####----------------------------- 
+        ---------------------------#######################----------------------------- -->    
+    <hr id="nav-side-projects" >
     <section class="container">
         <div>
             <h3 class="header-button btn btn-lg" data-toggle="collapse" data-target="#side-projects">Side Projects</h3>
@@ -100,9 +172,12 @@
             </div>
         </div>
     </section>
-    <hr>
-    <!-- ------------------------------------------------------------------------ -->
-   
+
+    
+    <!-----------------------------###################----------------------------- 
+        ---------------------------#### RESOURCES ####----------------------------- 
+        ---------------------------###################----------------------------- -->   
+    <hr id="nav-resources">
     <section class="container">
         <div>
             <h3 class="header-button btn btn-lg" data-toggle="collapse" data-target="#resources">Resources</h3>
@@ -116,9 +191,12 @@
             </div>
         </div>
     </section>
-    <hr>
-    <!-- ------------------------------------------------------------------------ -->
+
     
+    <!---------------------------############################----------------------------- 
+        -------------------------#### APP IDEAS - TRELLO ####----------------------------- 
+        -------------------------############################----------------------------- -->    
+    <hr id="nav-app-ideas">
     <section class="container">
         <div>
             <h3 class="header-button btn btn-lg" data-toggle="collapse" data-target="#trello-ideas">App Ideas from Trello</h3>
@@ -129,12 +207,15 @@
             </div>
         </div>
     </section>
-    <hr>
-    <!-- ------------------------------------------------------------------------ -->
-   
+
+    
+    <!-- ---------------------------###############--------------------------- 
+         ---------------------------#### BOOKS ####--------------------------- 
+         ---------------------------###############---------------------------- -->
+    <hr id="nav-books">
     <section class="container">
         <div>
-            <h3 class="header-button btn btn-lg" data-toggle="collapse" data-target="#books">Books Reading/Read 2018: Charlie</h3>
+            <h3 class="header-button btn btn-lg" data-toggle="collapse" data-target="#books">Books Reading/Read 2018</h3>
             <div id="books" class="collapse">
                 <ul>
                     <li><u><i>Shaken: Discovering Your True Identity in the Midst of Life's Storms</i></u> by: A. J. Gregory and Tim Tebow</li>
@@ -148,9 +229,12 @@
             </div>
         </div>
     </section>
-    <hr>    
-    <!-- ------------------------------------------------------------------------ -->
+
     
+    <!-- --------------------------##################---------------------------- 
+         --------------------------#### ARTICLES ####---------------------------- 
+         --------------------------##################---------------------------- -->  
+    <hr id="nav-articles"> 
     <section class="container">
         <div>
             <h3 class="header-button btn btn-lg" data-toggle="collapse" data-target="#articles">Review Articles</h3>
@@ -174,9 +258,12 @@
             </div>
         </div>
     </section>
-    <hr>
-    <!-- ------------------------------------------------------------------------ -->
+
     
+    <!-- ---------------------------##############------------------------------ 
+         ---------------------------#### BLOG ####------------------------------ 
+         ---------------------------##############------------------------------ -->  
+    <hr id="nav-blog">
     <section class="container">
         <div>
             <h3 class="header-button btn btn-lg" data-toggle="collapse" data-target="#blog">Blog Posts</h3>
@@ -190,9 +277,11 @@
             </div>
         </div>
     </section>
-    <hr>
-    <!-- ------------------------------------------------------------------------ -->
     
+    <!----------------------------####################----------------------------- 
+        --------------------------#### INTERNSHIP ####----------------------------- 
+        --------------------------####################----------------------------- -->
+    <hr id="nav-internships">
     <section class="container">
         <div>
             <h3 class="header-button btn btn-lg" data-toggle="collapse" data-target="#internship">Summer Internships</h3>
@@ -230,9 +319,11 @@
             </div>
         </div>
     </section>
-    <hr>
-    <!-- ------------------------------------------------------------------------ -->
     
+    <!-- ------------------------######################------------------------- 
+         ------------------------#### DAILY REVIEW ####------------------------- 
+         ------------------------######################------------------------- -->
+    <hr id="nav-daily-review">
     <section class="container">
         <div class="years">
             <h3 class="header-button btn btn-lg" data-toggle="collapse" data-target="#review">Daily Reviews</h3>
@@ -305,9 +396,11 @@
             </div><!-- Daily Review -->
         </div><!-- end of all years div --> 
     </section>
-    <hr>
-    <!-- ------------------------------------------------------------------------ -->
-        
+    
+    <!-------------------------###################---------------------------- 
+        -----------------------#### TANGIBLES ####---------------------------- 
+        -----------------------###################------------------------------>    
+    <hr id="nav-tangibles">
     <section class="container">
         <div>
             <h3 class="header-button btn btn-lg" data-toggle="collapse" data-target="#tangibles">Tangibles</h3>
@@ -331,31 +424,12 @@
             </div>
         </div>
     </section>
-    <hr>
-    <!-- ------------------------------------------------------------------------ -->
-        
- <!-- John's Code add back on when he joins back in the project
-
-    <section class="container">
-        <div>
-            <h3>Completed Tasks: John</h3>
-            <ul>
-                <li><a href="https://johnmorrow.herokuapp.com/">John- Personal Site on Heroku</a></li>
-            </ul>
-
-            <h3>Specific Goals: John</h3>
-            <ul>
-                <li>Push Code to GitHub</li>
-                <li>Update Personal Site on Heroku</li>
-            </ul>
-        </div>
-    </section>
-    <hr>
--->
-        <!-- ------------------------------------------------------------------------ -->
-
+    </div><!-- Jumbotron -->
 </body>
+    
+    
 <footer>
+    <hr>
     <div class="footer">
         <p>Copyright <a href="https://codecuddy.github.io/" target="blank">Charlie Cuddy</a> 2018</p>
 </footer>
