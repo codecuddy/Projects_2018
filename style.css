@@ -2,6 +2,14 @@ body {
     background-color: black;
 }
 
+.header-button {
+    font-size: 24px;
+}
+
+.btn:hover, a:hover {
+    color: red;
+}
+
 .container {
     display: flex;
 }
@@ -15,10 +23,19 @@ h3, h5 {
     color: yellow;
 }
 
-.month, h4  {
+.month {
+    color: goldenrod;
+}
+
+.year {
+    color: white;
+}
+
+.years, h4  {
     color: goldenrod;
 }
 
 li, footer {
     color: darkgray;
 }
+
