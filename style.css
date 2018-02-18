@@ -14,28 +14,23 @@ body, .jumbotron {
     display: flex;
 }
 
-
-.footer {
-    text-align: center;
-}
-
 h3, h5 {
     color: yellow;
-}
-
-.month {
-    color: goldenrod;
 }
 
 .year {
     color: white;
 }
 
-.years, h4  {
+.years, h4, .month  {
     color: goldenrod;
 }
 
 li, footer {
     color: darkgray;
+}
+
+.footer {
+    text-align: center;
 }
 
