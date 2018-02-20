@@ -11,8 +11,17 @@ body, .jumbotron {
 }
 
 .container {
-    display: flex;
+    text-align: center;
 }
+
+#priority {
+    color: white;
+}
+
+.col-sm-4, .col-sm-6 {
+    text-align: center;
+}
+
 
 h3, h5 {
     color: yellow;
@@ -22,15 +31,20 @@ h3, h5 {
     color: white;
 }
 
+h4 {
+    text-align: left;
+}
 .years, h4, .month  {
     color: goldenrod;
 }
 
 li, footer {
+    text-align: left;
     color: darkgray;
 }
 
 .footer {
     text-align: center;
+    bottom: 0;
 }
 
