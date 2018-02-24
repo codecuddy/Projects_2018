@@ -1,17 +1,37 @@
 # Projects_2018
 
-I want to have on main project that I am working on everyday... this is currently iOS 11. 
-
-However, I also wanted to have ways to track my progress, learning, and mini coding challenges/goals, 
-in order to stay sharp on previously learned material. 
-
-Right now the site is just HTML, but small projects through out the year will transform the site. 
+This site is a way for me to essentially keep a log of my daily activities centered around programming. 
 
 
+I wanted to have ways to track my progress, learning, and mini coding challenges/goals, 
+in order to stay sharp on previously learned material, while learning new languages and frameworks.
 
 
-# Survey Qustions
+I will also use this site to track books and articles I'm reading, or have read. As well as giving me a place
+to keep all of my ideas for apps, document job applications, and resources to further my learning. 
 
-How often would you like updates?
+
+
+
+
+# Survey Qustions for Back to School App
 
 What kind of update(s) would you like most? 
+-notes/homework
+-upcoming tests/quizzes
+-ways you can help at home
+-preparing for college
+-none
+-other
+
+
+How often would you like updates?
+-daily
+-weekly
+-monthly
+-quarterly
+-none
+
+
+
+
