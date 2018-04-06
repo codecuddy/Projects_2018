@@ -35,6 +35,15 @@ h5 {
     color: white;
 }
 
+.unity-titles {
+    text-align: left;
+    color: white;
+}
+
+.unity-links {
+    padding-left: 100px;
+}
+
 h4 {
     text-align: left;
 }
